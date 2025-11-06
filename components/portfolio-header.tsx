@@ -8,13 +8,15 @@ const translations = {
     description: "프로젝트로 이야기하는 개발 여정",
     github: "Visit Yangrok's GitHub",
     resume: "View Yangrok's Resume",
+    notionUrl: "https://slender-eris-078.notion.site/26eb782e585c81939902d556e63ed9ce"
   },
   JP: {
-    subtitle: "一緒に働きたい開発者",
+    subtitle: "共に働きたい開発者",
     title: "オ ヤンロクのPortFolio",
     description: "プロジェクトで語る開発の旅",
     github: "YangrokのGitHubを見る",
     resume: "Yangrokの履歴書を見る",
+    notionUrl: "https://slender-eris-078.notion.site/2a1b782e585c81bc9669e025cd40260a"
   },
 }
 
@@ -66,7 +68,7 @@ export default function PortfolioHeader({ language }: PortfolioHeaderProps) {
 
             {/* Notion Link */}
             <a
-              href="https://slender-eris-078.notion.site/26eb782e585c81939902d556e63ed9ce"
+              href={t.notionUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-gray-700 transition-colors hover:text-gray-900"
