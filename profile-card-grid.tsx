@@ -9,10 +9,10 @@ import { cn } from "@/lib/utils"
 type ProfileCardProps = {
   projectName: { KR: string; JP: string }
   projectDate: string
-  picture: string
+  picture?: { KR: string; JP: string }
   date: string
   skillTag?: string[]
-  pdfUrl?: string
+  pdfUrl?: { KR: string; JP: string }
   company: { KR: string; JP: string }
 }
 
@@ -39,73 +39,73 @@ const profiles: ProfileCardProps[] = [
   {
     projectName: { KR: "시스템 운영 자동화", JP: "システム運用自動化" },
     projectDate: "2025.07-2025.12",
-    picture: "/images/design-mode-pf-pic/pf_pic_8.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_8.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_8.png" },
     date: "2025-07-01",
     skillTag: ["Java", "Spring Boot", "Oracle", "My Batis"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_시스템 운영 자동화(2025.07 ~ 2025.12).pdf",
-    company: { KR: "PayPay-Card / 시스오페 자동화 팀", JP: "PayPay-Card / システム運用自動化チーム" },
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_시스템 운영 자동화(2025.07 ~ 2025.12).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_システム自動化.pdf" },
+    company: { KR: "페이페이 카드 / 시스오페 자동화 팀", JP: "P社 / 自動化チーム" },
   },
   {
     projectName: { KR: "기간 시스템 유지보수", JP: "基幹システム保守" },
     projectDate: "2025.01-2025.06",
-    picture: "/images/design-mode-pf-pic/pf_pic_7.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_7.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_7.png" },
     date: "2025-01-01",
     skillTag: ["Java", "Interfarm", "Oracle", "Shell Script"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_기간 시스템(2025.01 ~ 2025.06).pdf",
-    company: { KR: "PayPay-Card / 공통 그룹", JP: "PayPay-Card / 共通グループ" },
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_기간 시스템(2025.01 ~ 2025.06).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_基幹システム保守.pdf" },
+    company: { KR: "페이페이 카드 / 공통 그룹", JP: "P社 / 共通チーム" },
   },
   {
     projectName: { KR: "범용 데이터 집계 시스템 개발", JP: "汎用データ集計システム開発" },
     projectDate: "2024.10-2024.12",
-    picture: "/images/design-mode-pf-pic/pf_pic_6.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_6.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_6.png" },
     date: "2024-10-01",
     skillTag: ["Python", "Django", "PostgreSQL", "Swagger"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_범용 데이터 집계 시스템(2024.10 ~ 2024.12).pdf",
-    company: { KR: "AIS / 신규 시스템 개발 팀", JP: "AIS / 新規システム開発チーム" },
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_범용 데이터 집계 시스템(2024.10 ~ 2024.12).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_汎用データ集計システム.pdf" },
+    company: { KR: "아시아 정보 시스템 / 신규 시스템 개발 팀", JP: "A社 / 新規システム開発チーム" },
   },
   {
     projectName: { KR: "검사치료 워크리스트 개발", JP: "検査治療ワークリスト開発" },
     projectDate: "2024.02-2024.03",
-    picture: "/images/design-mode-pf-pic/pf_pic_5.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_5.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_5.png" },
     date: "2024-02-01",
     skillTag: ["Java", "JavaScript", "Oracle", "X-platform"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_검사치료 워크리스트(InternProject).pdf",
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_검사치료 워크리스트(InternProject).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_検査治療ワークリスト.pdf" },
     company: { KR: "평화이즈 / 인턴", JP: "平和イズ / インターン" },
   },
   {
     projectName: { KR: "항암 프로토콜 마스터 개발", JP: "抗がんプロトコルマスター開発" },
     projectDate: "2024.01-2024.01",
-    picture: "/images/design-mode-pf-pic/pf_pic_4.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_4.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_4.png" },
     date: "2024-01-01",
     skillTag: ["Java", "JavaScript", "Oracle", "X-platform"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_항암 프로토콜(InternProject).pdf",
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_항암 프로토콜(InternProject).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_抗癌プロトコルマスター.pdf" },
     company: { KR: "평화이즈 / 인턴", JP: "平和イズ / インターン" },
   },
   {
     projectName: { KR: "Health Note", JP: "Health Note" },
     projectDate: "2023.07-2023.10",
-    picture: "/images/design-mode-pf-pic/pf_pic_3.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_3.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_3.png" },
     date: "2023-10-01",
     skillTag: ["Java", "JavaScript", "Oracle", "X-platform"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_HealthNote(Capstone Project).pdf",
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_HealthNote(Capstone Project).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_HealthNote.pdf" },
     company: { KR: "폴리텍 대학 / 졸업 프로젝트", JP: "ポリテク大学 / 卒業プロジェクト" },
   },
   {
     projectName: { KR: "Nagano Planner", JP: "Nagano Planner" },
     projectDate: "2023.02-2023.03",
-    picture: "/images/design-mode-pf-pic/pf_pic_2.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_2.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_2.png" },
     date: "2023-02-01",
     skillTag: ["Html", "CSS", "JavaScript"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_NaganoPlanner(ToyProject).pdf",
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_NaganoPlanner(ToyProject).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_NaganoPlanner.pdf" },
     company: { KR: "개인 프로젝트", JP: "個人プロジェクト" },
   },
   {
     projectName: { KR: "Picture Board", JP: "Picture Board" },
     projectDate: "2023.04-2023.05",
-    picture: "/images/design-mode-pf-pic/pf_pic_1.png",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_1.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_1.png" },
     date: "2023-04-01",
     skillTag: ["Html", "CSS", "JavaScript"],
-    pdfUrl: "/pdfs-kr/PortFolio_어양록_PictureBoard(ToyProject).pdf",
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_PictureBoard(ToyProject).pdf", JP: "/pdfs-kr/PortFolio_魚洋緑_PictureBoard.pdf" },
     company: { KR: "개인 프로젝트", JP: "個人プロジェクト" },
   },
 ]
@@ -167,9 +167,11 @@ export default function ProfileCardGrid({
     }
   }
 
-  const handleOpenPdf = (pdfUrl: string) => {
-    setSelectedPdf(pdfUrl)
-  }
+  const handleOpenPdf = (pdfUrlObj?: { KR: string; JP: string } | null) => {
+    if (!pdfUrlObj) return
+    const url = pdfUrlObj[currentLanguage]
+    setSelectedPdf(url)
+}
 
   const t = translations[currentLanguage]
 
@@ -332,16 +334,17 @@ function ProfileCard({
   ]
 
   const handleDownload = (e: React.MouseEvent) => {
-    e.stopPropagation()
-    if (pdfUrl) {
-      const filename = pdfUrl.split("/").pop() || "download.pdf"
-      const link = document.createElement("a")
-      link.href = pdfUrl
-      link.download = filename
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
-    }
+   e.stopPropagation()
+    if (!pdfUrl) return
+    const url = pdfUrl[language]
+    if (!url) return
+    const filename = url.split("/").pop() || "download.pdf"
+    const link = document.createElement("a")
+    link.href = url
+    link.download = filename
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   const t = translations[language]
@@ -353,7 +356,7 @@ function ProfileCard({
     >
       <div className="relative h-40 p-2">
         <img
-          src={picture || "/placeholder.svg"}
+          src={picture?.[language] || "/placeholder.svg"}
           alt={projectName[language]}
           className="h-full w-full rounded-2xl object-cover shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.9)]"
         />
