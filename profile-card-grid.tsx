@@ -55,7 +55,7 @@ const profiles: ProfileCardProps[] = [
     company: { KR: "페이페이 카드 / 공통 그룹", JP: "P社 / 共通チーム" },
   },
   {
-    projectName: { KR: "범용 데이터 집계 시스템 개발", JP: "汎用データ集計システム開発" },
+    projectName: { KR: "범용 데이터 집계 시스템", JP: "汎用データ集計システム" },
     projectDate: "2024.10-2024.12",
     picture: { KR: "/images/design-mode-pf-pic/pf_pic_6.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_6.png" },
     date: "2024-10-01",
@@ -64,7 +64,7 @@ const profiles: ProfileCardProps[] = [
     company: { KR: "아시아 정보 시스템 / 신규 시스템 개발 팀", JP: "A社 / 新規システム開発チーム" },
   },
   {
-    projectName: { KR: "검사치료 워크리스트 개발", JP: "検査治療ワークリスト開発" },
+    projectName: { KR: "검사치료 워크리스트", JP: "検査治療ワークリスト" },
     projectDate: "2024.02-2024.03",
     picture: { KR: "/images/design-mode-pf-pic/pf_pic_5.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_5.png" },
     date: "2024-02-01",
@@ -73,7 +73,7 @@ const profiles: ProfileCardProps[] = [
     company: { KR: "평화이즈 / 인턴", JP: "平和イズ / インターン" },
   },
   {
-    projectName: { KR: "항암 프로토콜 마스터 개발", JP: "抗がんプロトコルマスター開発" },
+    projectName: { KR: "항암 프로토콜 마스터", JP: "抗がんプロトコルマスター" },
     projectDate: "2024.01-2024.01",
     picture: { KR: "/images/design-mode-pf-pic/pf_pic_4.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_4.png" },
     date: "2024-01-01",
@@ -178,7 +178,7 @@ export default function ProfileCardGrid({
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 p-4 pt-12 md:p-8 md:pt-16 relative">
       <div className="mx-auto max-w-6xl">
-        <div className="absolute top-4 right-4 md:top-6 md:right-8">
+        <div className="fixed"style={{top: "calc(7.8rem + 2rem)", right: "2rem"}}>
           <button
             onClick={() => setCurrentLanguage(currentLanguage === "KR" ? "JP" : "KR")}
             className="flex rounded-full bg-white shadow-[6px_6px_12px_rgba(0,0,0,0.1),-6px_-6px_12px_rgba(255,255,255,0.9)] p-0.5"
