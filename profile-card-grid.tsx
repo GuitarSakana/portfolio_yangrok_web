@@ -36,6 +36,15 @@ const translations = {
 }
 
 const profiles: ProfileCardProps[] = [
+    {
+    projectName: { KR: "Portfilio Gallery", JP: "Portfilio Gallery" },
+    projectDate: "2025.11-2025.11",
+    picture: { KR: "/images/design-mode-pf-pic/pf_pic_9.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_9.png" },
+    date: "2025-11-08",
+    skillTag: ["V0","TypeScript", "React", "TailwindCSS"],
+    pdfUrl: { KR: "/pdfs-kr/Portfolio_어양록_포트폴리오 갤러리.pdf", JP: "/pdfs-jp/Portfolio_魚洋緑_ポートフォリオギャラリー.pdf" },
+    company: { KR: "개인 프로젝트", JP: "個人プロジェクト" },
+  },
   {
     projectName: { KR: "시스템 운영 자동화", JP: "システム運用自動化" },
     projectDate: "2025.07-2025.12",
@@ -105,7 +114,7 @@ const profiles: ProfileCardProps[] = [
     picture: { KR: "/images/design-mode-pf-pic/pf_pic_1.png", JP: "/images/design-mode-pf-pic-jp/pf_pic_1.png" },
     date: "2023-04-01",
     skillTag: ["Html", "CSS", "JavaScript"],
-    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_PictureBoard(ToyProject).pdf", JP: "/pdfs-kr/PortFolio_魚洋緑_PictureBoard.pdf" },
+    pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_PictureBoard(ToyProject).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_PictureBoard.pdf" },
     company: { KR: "개인 프로젝트", JP: "個人プロジェクト" },
   },
 ]
