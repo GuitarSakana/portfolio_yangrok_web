@@ -70,7 +70,7 @@ const profiles: ProfileCardProps[] = [
     date: "2024-02-01",
     skillTag: ["Java", "JavaScript", "Oracle", "X-platform"],
     pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_검사치료 워크리스트(InternProject).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_検査治療ワークリスト.pdf" },
-    company: { KR: "평화이즈 / 인턴", JP: "平和イズ / インターン" },
+    company: { KR: "평화이즈 / 인턴", JP: "P社 / インターン" },
   },
   {
     projectName: { KR: "항암 프로토콜 마스터", JP: "抗がんプロトコルマスター" },
@@ -79,7 +79,7 @@ const profiles: ProfileCardProps[] = [
     date: "2024-01-01",
     skillTag: ["Java", "JavaScript", "Oracle", "X-platform"],
     pdfUrl: { KR: "/pdfs-kr/PortFolio_어양록_항암 프로토콜(InternProject).pdf", JP: "/pdfs-jp/PortFolio_魚洋緑_抗癌プロトコルマスター.pdf" },
-    company: { KR: "평화이즈 / 인턴", JP: "平和イズ / インターン" },
+    company: { KR: "평화이즈 / 인턴", JP: "P社 / インターン" },
   },
   {
     projectName: { KR: "Health Note", JP: "Health Note" },
